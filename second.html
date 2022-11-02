@@ -1,0 +1,97 @@
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="bootstrap.css" rel="stylesheet">
+  <script src="bootstrap.bundle.js"></script>
+</head>
+<body style="background-color:lavenderblush;" >
+    <h1 align="left" style="color:black; background:lightsteelblue;" class="mt-2"><img src="logo.jpg" width="100px" height="90px" class="mx-5" ><b>R.K.Valley - AMS </b></h1>
+
+<div class="container">  
+<div class="carousel slide" id="slider" data-bs-ride="carousel">
+
+<ol class="carousel-indicators">
+<li data-bs-target="#slider" data-bs-slide-to="0" class="active"></li>
+<li data-bs-target="#slider" data-bs-slide-to="1"></li>
+<li data-bs-target="#slider" data-bs-slide-to="2"></li>
+<li data-bs-target="#slider" data-bs-slide-to="3"></li>
+<li data-bs-target="#slider" data-bs-slide-to="4"></li>
+<li data-bs-target="#slider" data-bs-slide-to="5"></li>
+<li data-bs-target="#slider" data-bs-slide-to="6"></li>
+</ol>
+
+<div class="carousel-inner" role="listbox">
+<div class="carousel-item active " data-bs-interval="1">
+<img src="1.jpg" width="100%" height="400px";>
+</div>
+</div>
+
+<div class="carousel-item">
+<img src="2.jpg"  width="100%" height="400px">
+</div>
+
+<div class="carousel-item">
+<img src="3.jpg"  width="100%" height="400px" >
+</div>
+
+<div class="carousel-item">
+<img src="4.jpg"  width="100%" height="400px">
+</div>
+
+<div class="carousel-item">
+<img src="5.jpg"  width="100%" height="400px" >
+</div>
+        
+<div class="carousel-item">
+<img src="6.jpg" width="100%" height="400px" >
+</div>
+
+<div class="carousel-item">
+<img src="7.jpg" width="100%" height="400px" >
+</div>
+                            
+</div>
+
+<a href="#slider" class="carousel-control-prev" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</a>
+<a href="#slider" class="carousel-control-next" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+
+<br>
+<form action="final.php" method="POST">
+<div class="container bg-warning mt-1 pt-1">
+<div class="row">
+<div class="col-md-3">    
+<div class="input-group">
+
+<label class="mx-2"><b>Batch & Year :  </b></lable>
+<div class="input-group">
+<input type="text" id="name" name="name" placeholder="Ex:- R18 E2" class="form-control">
+
+<label class="my-2 px-1"><b>Section :</b></lable>
+<div class="input-group">
+<input type="text" id="sec" name="section" placeholder="Ex:- A/B/C/D/E" class="form-control">
+
+<label class="my-2 px-1"><b>Date :</b></lable>
+<div class="input-group">
+<input type="date" id="date" name="date" placeholder="select date" class="form-control"> 
+
+<label class="my-2 px-1"><b>Absenties :</b></lable>
+<div class="input-group">
+<input type="text" id="absent" name="absent" placeholder="Enter Absenties Roll No.s" class="form-control"> 
+
+
+<button type="submit" style="background-color:black; color: whitesmoke;" class="px-2 mx-1" ><b><i>Upload</i></b></button>
+</div>
+</form>
+</div>
+</div>
+</body>
+</html>

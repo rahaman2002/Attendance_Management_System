@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <body bgcolor="dimgray">
+        <br><br>
+        <h1 align="center" style="color:Yellow;"><b><u>RGUKT - R.K.VALLEY</b></u> </h1>
+        <h1 align="center" style="color:black;"><b> ATTENDANCE MANAGEMENT SYSTEM</b> </h1>
+        <table align="center">
+        <th align="center">
+        <fieldset style="width:600px;">
+        <legend align="center" style="color:lime"><h2>LOGIN</h2></legend>       
+        <form action="second.html" id="form" style="color:black " width="600px" >
+            <label><b>Faculty Name    : </b></label>
+            <input type="text" id="fname" required/> <br/><br/>
+            <label for="fid"><b>Employee Id :</b></label>
+            <input type="text" id="fid" required/> <br/><br/>
+            <i><mark><span id="perror"></span></mark></i> <br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <button type="submit" style="background-color: cyan; color:black align="center">
+               <b>login</b></button> <br/>
+            </form>
+            </th>
+            </table>
+            </fieldset>
+            <script>
+                let form=document.getElementById('form');
+                form.addEventListener("submit",event=>{event.preventDefault();validate();});
+        
+            function validate()
+            {
+                let  eid=document.getElementById('fid');
+                let perror=document.getElementById('perror');
+                let id=eid.value.trim();
+        
+                        if(id=="")
+                        {
+                            perror.innerText="Employee Id can't be empty";
+                            return false;
+                        }
+                        if(!(/[0-9]/).test(id))
+                        { 
+                            perror.innerText= "Employee Id  should contain numbers only";
+                            return false;
+                        }
+                        if(id.length!=5)
+                        {
+                            perror.innerText='Employee Id should contain 5 digits';
+                            return false;
+                        }                
+                        form.submit();
+            }
+            </script>
+        </body>
+        </html>
